@@ -4,6 +4,7 @@ import { Inter } from "@next/font/google";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import WorkExperience from "@/components/WorkExperience";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,7 @@ const Home: NextPage = () => {
 
       <Header />
 
-      <section id="hero" className="snap-center">
+      <section id="hero" className="snap-start">
         <Hero />
       </section>
 
@@ -24,7 +25,9 @@ const Home: NextPage = () => {
         <About />
       </section>
 
-      {/* { Experince } */}
+      <section id="experience" className="snap-center">
+        <WorkExperience />
+      </section>
 
       {/* { Projects } */}
 
